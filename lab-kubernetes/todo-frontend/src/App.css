@@ -7,6 +7,12 @@
   margin-top: -1.5rem;
 }
 
+.item-count {
+  color: #606c76;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
 /* Custom color */
 .button-red {
   background-color: salmon;
