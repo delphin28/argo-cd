@@ -2,6 +2,11 @@
   max-width: 40rem;
 }
 
+.page-intro {
+  color: #606c76;
+  margin-top: -1.5rem;
+}
+
 /* Custom color */
 .button-red {
   background-color: salmon;

@@ -20,6 +20,7 @@ export function ItemPage() {
   return (
     <>
       <h1>Todo List</h1>
+      <p className="page-intro">Keep track of the next things you want to get done.</p>
       {/* notice that child components, such as ItemList, are automatically re-rendered whenever this state updates */}
       {items ? (
         <ItemList items={items} onDelete={fetchItems} />
