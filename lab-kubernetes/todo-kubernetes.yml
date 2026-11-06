@@ -130,7 +130,7 @@ spec:
     spec:
       containers:
         - name: todofrontend
-          image: todofrontend:v3
+          image: todofrontend:v4
           imagePullPolicy: Never
           ports:
             - containerPort: 8080

@@ -17,13 +17,16 @@ export function ItemPage() {
     getItems().then(setItems);
   }
 
+  const remainingItems = items?.filter((item) => !item.done).length;
+
   return (
     <>
       <h1>Todo List</h1>
       <p className="page-intro">Keep track of the next things you want to get done.</p>
       {items && (
         <p className="item-count">
-          {items.length} {items.length === 1 ? 'task' : 'tasks'}
+          {items.length} {items.length === 1 ? 'task' : 'tasks'} | {remainingItems}{' '}
+          remaining
         </p>
       )}
       {/* notice that child components, such as ItemList, are automatically re-rendered whenever this state updates */}
